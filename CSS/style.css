@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: "roboto";
+}
+header {
+  background-image: url(BG.jpg);
+  background-size: cover;
+  height: 60vw;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+#navItems {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#navItems > a > li {
+  padding-left: ;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#logo {
+  max-width: 100%;
+  width: 13.542vw;
+}
+
+#cart_wishlist {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+#cart_wishlist > a > img {
+  margin-left: 2vw;
+}
+.mrgn {
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+}
+
+h1 {
+  font-size: var(--title-heading);
+}
