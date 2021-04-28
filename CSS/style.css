@@ -133,7 +133,7 @@ button {
   background-color: #ccebd9;
 }
 
-/* NEW ARRIVALS*/
+/* NEW ARRIVALS + TOP-SELLING */
 
 .newTop {
   margin-top: 10vw;
@@ -204,4 +204,27 @@ button {
 
 #green {
   background-color: #9bd9b4;
+}
+
+/* SUSTAINABLE */
+
+#sustainable {
+  margin-top: 10vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dede40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 4.313vw;
+  letter-spacing: var(--spacing);
+}
+
+#sustainable > button {
+  border: 4px solid white;
+  background-color: #dede40;
+  font-size: 1.7vw;
+  color: white;
 }
