@@ -79,33 +79,49 @@ button {
 .categoryBoxes {
   width: 20.833vw;
   height: 20.833vw;
-  background-color: #d7ebf4;
   margin-right: 3vw;
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #catbox1 {
   left: 0;
+  background-color: #d7ebf4;
 }
 
 #catbox2 {
-  left: 23vw;
+  left: 22vw;
+  background-color: #e5f5eb;
 }
 
 #catbox3 {
-  left: 46vw;
+  left: 44vw;
+  background-color: #f6f6ce;
 }
 
 #catbox4 {
-  left: 69vw;
+  left: 66vw;
+  background-color: #ccebd9;
 }
 
 #catbox5 {
-  left: 92vw;
+  left: 88vw;
+  background-color: #d7ebf4;
 }
+
+#catbox6 {
+  left: 110vw;
+  background-color: #f6f6ce;
+}
+
+#catbox7 {
+  left: 132vw;
+  background-color: #;
+}
+
 /* NEW ARRIVALS*/
 
 #newArrivals {
