@@ -73,9 +73,20 @@ button {
   position: relative;
   width: calc(100vw - var(--margin));
   height: 20vw;
-  /*overflow: hidden;*/
+  margin-top: 10vw;
+  overflow: hidden;
 }
 
+.categoryBoxes > img {
+  width: 60%;
+  margin-top: -2vw;
+}
+
+.categoryBoxes > h2 {
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  font-size: 1.4vw;
+}
 .categoryBoxes {
   width: 20.833vw;
   height: 20.833vw;
@@ -119,7 +130,7 @@ button {
 
 #catbox7 {
   left: 132vw;
-  background-color: #;
+  background-color: #ccebd9;
 }
 
 /* NEW ARRIVALS*/
