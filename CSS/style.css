@@ -62,7 +62,7 @@ button {
   color: var(--button-color);
   height: var(--button-height);
   width: 14.948vw;
-  font-size: var(--body-text);
+  font-size: var(--button-text);
   font-weight: 600;
 }
 
@@ -82,7 +82,7 @@ button {
   margin-top: -2vw;
 }
 
-.categoryBoxes > h2 {
+.categoryBoxes > h4 {
   font-weight: 300;
   letter-spacing: 0.15em;
   font-size: 1.4vw;
@@ -135,6 +135,73 @@ button {
 
 /* NEW ARRIVALS*/
 
-#newArrivals {
-  margin-top: 30vw;
+.newTop {
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categoryH {
+  letter-spacing: var(--spacing);
+  font-size: var(--category-heading);
+  font-weight: 500;
+  margin-bottom: 8vw;
+}
+.catRow {
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  box-shadow: var(--shadow);
+  margin-right: 1.5vw;
+  width: 16.943vw;
+  height: 26.131vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colorVariants {
+  display: flex;
+  margin-top: 0.5vw;
+}
+
+.variant {
+  width: 1vw;
+  height: 1vw;
+  margin: 0.5vw;
+  background-color: #d7ebf4;
+  border-radius: 50px;
+}
+.productImage {
+  margin: 1vw 0vw;
+  width: 100%;
+}
+
+.product > h3 {
+  margin: 0.5vw;
+  font-size: 1.042vw;
+  letter-spacing: var(--spacing);
+}
+
+.productTitle {
+  font-weight: 300;
+}
+
+.browseMore {
+  background-color: #3caccb;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.browseMore > div > h3 {
+  font-size: 1.7vw;
+  font-weight: 400;
+  letter-spacing: var(--spacing);
+}
+
+#green {
+  background-color: #9bd9b4;
 }

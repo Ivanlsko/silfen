@@ -5,13 +5,15 @@
   --baby-blue: 95bcd8;
 
   --title-heading: 4.792vw;
-  --spacing: ;
+  --spacing: 0.15em;
   --normal-text: 1.25vw;
   --buton-text: 1.719vw;
+  --category-heading: 3.229vw;
 
   --margin: 6.771vw;
 
-  --shadow: ;
+  --shadow: rgba(0, 0, 0, 0.1) 2px 4px 11px 0px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
   --button-height: 4.844vw;
 }
