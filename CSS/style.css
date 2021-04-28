@@ -20,9 +20,6 @@ nav {
   padding: 0;
 }
 
-#navItems > a > li {
-  padding-left: ;
-}
 a {
   text-decoration: none;
   color: black;
@@ -63,7 +60,6 @@ button {
   border: 2px solid var(--button-color);
   background-color: white;
   color: var(--button-color);
-  width: ;
   height: var(--button-height);
   width: 14.948vw;
   font-size: var(--body-text);
