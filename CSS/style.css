@@ -65,3 +65,49 @@ button {
   font-size: var(--body-text);
   font-weight: 600;
 }
+
+/* CATEGORIES */
+
+#categories {
+  display: flex;
+  position: relative;
+  width: calc(100vw - var(--margin));
+  height: 20vw;
+  /*overflow: hidden;*/
+}
+
+.categoryBoxes {
+  width: 20.833vw;
+  height: 20.833vw;
+  background-color: #d7ebf4;
+  margin-right: 3vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#catbox1 {
+  left: 0;
+}
+
+#catbox2 {
+  left: 23vw;
+}
+
+#catbox3 {
+  left: 46vw;
+}
+
+#catbox4 {
+  left: 69vw;
+}
+
+#catbox5 {
+  left: 92vw;
+}
+/* NEW ARRIVALS*/
+
+#newArrivals {
+  margin-top: 30vw;
+}
