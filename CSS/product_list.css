@@ -75,9 +75,9 @@ button {
 
 .productList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr;
-  grid-gap: 5rem 1rem;
+  grid-gap: 5rem 0.8rem;
 }
 
 .product {
@@ -101,8 +101,8 @@ button {
   border-radius: 50px;
 }
 .productImage {
-  margin: 1vw 0vw;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .product > h3 {
