@@ -88,9 +88,17 @@ button {
   padding-bottom: 1rem;
 }
 
+.hidden {
+  display: none;
+}
+
+.product:hover a {
+  display: inline-block;
+}
+
 .colorVariants {
   display: flex;
-  margin-top: 0.5vw;
+  margin-top: 0.5rem;
 }
 
 .variant {
@@ -117,5 +125,5 @@ button {
 
 /* Media queries */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
 }
