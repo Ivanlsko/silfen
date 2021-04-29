@@ -126,4 +126,17 @@ button {
 /* Media queries */
 
 @media screen and (max-width: 490px) {
+  .productList {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .product > h3 {
+    font-size: 0.8rem;
+  }
+
+  .variant {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.3rem;
+  }
 }
