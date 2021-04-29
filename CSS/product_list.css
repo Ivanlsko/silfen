@@ -85,20 +85,34 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1rem;
 }
 
 .hidden {
   display: none;
 }
 
-.product:hover a {
-  display: inline-block;
+article:hover a.productLink {
+  display: block;
+  background: var(--button-color);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+article:hover #img_02 {
+  display: block;
+}
+
+article:hover #img_01 {
+  display: none;
 }
 
 .colorVariants {
   display: flex;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .variant {
