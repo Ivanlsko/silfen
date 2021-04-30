@@ -26,6 +26,7 @@ function showAllProducts(products) {
     copy.querySelector(".productTitle").textContent = product.title;
     copy.querySelector(".productPrice span").textContent = product.price;
     if (product.discount) {
+      copy.querySelector("article").classList.add("onSale");
       copy.querySelector(".discountPrice").classList.remove("hidden");
       copy.querySelector(".discountPrice span").textContent = Math.round(
         product.price * (1 - product.discount / 100)

@@ -89,6 +89,34 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  /* height: 380px; */
+}
+
+article.onSale .productPrice {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 0.6rem;
+}
+
+article.onSale .discountPrice {
+  color: var(--button-color);
+}
+
+article.onSale::before {
+  content: "SALE";
+  position: absolute;
+  background-color: var(--yellow);
+  color: black;
+  font-weight: 100;
+  font-size: 0.8em;
+  letter-spacing: var(--spacing);
+  padding: 0.3em 1.7em;
+  margin: 0.5em;
+  border-radius: 3em;
+  top: 0;
+  right: 10;
+  z-index: 1;
 }
 
 .imgWrapper {
@@ -154,7 +182,7 @@ article:hover button.heart {
 
 .product > h3 {
   margin: 0.5vw;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: var(--spacing);
 }
 
@@ -168,13 +196,18 @@ article:hover button.heart {
 
 /* Media queries */
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 500px) {
   .productList {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
+  button.heart {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
   .product > h3 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .variant {
