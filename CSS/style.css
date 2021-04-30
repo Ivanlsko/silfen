@@ -290,15 +290,18 @@ footer > .mrgn > img {
 
 #footerGrid {
   display: grid;
-  grid-template-columns: 4fr 1.5fr 1.5fr 4fr;
+  grid-template-columns: 5fr 1.5fr 1.5fr 4fr;
   justify-content: center;
   margin-top: 10.156vw;
+  align-items: start;
+  gap: 1vw;
 }
 
 #bottom {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #f3f3f3;
+  margin-top: 3vw;
 }
 
 #bottom > ul {
@@ -317,17 +320,60 @@ footer > .mrgn > img {
 }
 
 #socialFooter {
-  justify-self: end;
+  display: flex;
+  flex-direction: column;
+}
+
+#shopFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#quickLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #footerGrid > #quickLinks > ul > li {
-  padding-bottom: 1.875vw;
+  padding-bottom: 1.5vw;
 }
 
 #footerGrid > #shopFooter > ul > li {
-  padding-bottom: 1.875vw;
+  padding-bottom: 1.5vw;
 }
 
 #bottom > ul > li {
   padding: 0vw 0.5vw;
+}
+
+#newsletter > h3 {
+  font-size: 2.292vw;
+  margin-top: -0.5vw;
+}
+
+.footerH4 {
+  margin: 0;
+}
+
+#someIcons {
+  display: flex;
+}
+
+#someIcons > img {
+  padding-right: 1vw;
+}
+
+input {
+  border-bottom: 3px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #95bcd8;
+  color: #f8f8f8;
+  font-family: "roboto";
+  padding-bottom: 1.5vw;
+  width: 28vw;
+  font-size: 1.25vw;
 }
