@@ -24,6 +24,7 @@ function showAllProducts(products) {
     copy.querySelector("#img_01").src = product.img_01;
     copy.querySelector("#img_02").src = product.img_02;
     copy.querySelector(".productTitle").textContent = product.title;
+    copy.querySelector(".productPrice span").textContent = product.price;
     //append
     document.querySelector(".productList").appendChild(copy);
   });
