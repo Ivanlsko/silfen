@@ -80,11 +80,19 @@ button {
   grid-gap: 5rem 0.8rem;
 }
 
+article {
+  position: relative;
+}
+
 .product {
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.imgWrapper {
+  position: relative;
 }
 
 .hidden {
@@ -109,23 +117,21 @@ article:hover #img_01 {
   display: none;
 }
 
-article {
-  position: relative;
-}
-
 button.heart {
   position: absolute;
-  top: 4%;
-  left: 80%;
-  /* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-  background: url(../Assets/heart_black.svg);
-  /* background-color: transparent; */
-  width: 2rem;
-  height: 2rem;
+  top: 1em;
+  right: 1em;
+  background: url(../Assets/heart_btn_b.svg) no-repeat;
+  width: 1.7rem;
+  height: 1.7rem;
   background-size: 100%;
   cursor: pointer;
   border: none;
+}
+
+article:hover button.heart {
+  background: url(../Assets/heart_btn_w.svg) no-repeat;
+  background-size: 100%;
 }
 
 .colorVariants {
