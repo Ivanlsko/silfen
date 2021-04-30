@@ -109,6 +109,25 @@ article:hover #img_01 {
   display: none;
 }
 
+article {
+  position: relative;
+}
+
+button.heart {
+  position: absolute;
+  top: 4%;
+  left: 80%;
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  background: url(../Assets/heart_black.svg);
+  /* background-color: transparent; */
+  width: 2rem;
+  height: 2rem;
+  background-size: 100%;
+  cursor: pointer;
+  border: none;
+}
+
 .colorVariants {
   display: flex;
   margin-top: 0.5rem;
