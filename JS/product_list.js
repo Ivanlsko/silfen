@@ -13,5 +13,18 @@ fetch("https://keafs-8b71.restdb.io/rest/silfen-products", {
   });
 
 function showAllProducts(products) {
-  console.log(products);
+  //   console.log(products);
+  //grab template
+  const template = document.querySelector("#productTemplate").content;
+  //clone
+  products.forEach((product) => {
+    console.log(product);
+    const copy = template.cloneNode(true);
+    //adjust stuff
+    copy.querySelector("#img_01").src = product.img_01;
+    copy.querySelector("#img_02").src = product.img_02;
+    copy.querySelector(".productTitle").textContent = product.title;
+    //append
+    document.querySelector(".productList").appendChild(copy);
+  });
 }

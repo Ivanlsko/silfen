@@ -159,6 +159,10 @@ article:hover button.heart {
 }
 
 .productTitle {
+  text-transform: uppercase;
+}
+
+.productTitle {
   font-weight: 300;
 }
 
