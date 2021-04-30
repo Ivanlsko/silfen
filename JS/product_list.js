@@ -25,6 +25,12 @@ function showAllProducts(products) {
     copy.querySelector("#img_02").src = product.img_02;
     copy.querySelector(".productTitle").textContent = product.title;
     copy.querySelector(".productPrice span").textContent = product.price;
+    if (product.discount) {
+      copy.querySelector(".discountPrice").classList.remove("hidden");
+      copy.querySelector(".discountPrice span").textContent = Math.round(
+        product.price * (1 - product.discount / 100)
+      );
+    }
     //append
     document.querySelector(".productList").appendChild(copy);
   });
