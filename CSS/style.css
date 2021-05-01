@@ -377,3 +377,35 @@ input {
   width: 28vw;
   font-size: 1.25vw;
 }
+
+.dropdown {
+  background-color: #95bcd8;
+  display: block;
+}
+
+#navItems > li {
+  color: white;
+}
+
+#nav {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  padding-top: 2.656vw;
+}
+
+li > h4 {
+  margin: 0;
+  font-weight: normal;
+  color: white;
+}
+
+#dropDowngrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  padding-top: 2.656vw;
+}
+
+#dropDowngrid > ul > li {
+  display: flex;
+  flex-direction: column;
+}
