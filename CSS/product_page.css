@@ -133,6 +133,8 @@ span {
   width: 16vw;
   font-size: var(--button-text);
   font-weight: 600;
+  position: relative;
+  top: -100px;
 }
 
 .product {
@@ -213,10 +215,12 @@ span {
   box-shadow: var(--shadow);
   margin-right: 0.75vw;
   margin-left: 0.75vw;
-  width: 28vw;
+  width: 24vw;
   height: 26.131vw;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .rev-content {
@@ -247,6 +251,36 @@ span {
   height: 16vw;
   background-color: #3caccb;
   position: relative;
-  top: -160px;
+  /* top: -160px; */
   z-index: -2;
+  display: flex;
+  justify-content: center;
+}
+
+.rev-nav {
+  position: absolute;
+  bottom: 20%;
+  left: auto;
+}
+
+.empty {
+  width: 16px;
+  height: 16px;
+  margin: 0.5vw;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50px;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.full {
+  width: 20px;
+  height: 20px;
+  margin: 0.5vw;
+  background-color: white;
+  border-radius: 50px;
+  display: inline-block;
 }
