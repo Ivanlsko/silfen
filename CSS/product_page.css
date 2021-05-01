@@ -82,7 +82,7 @@ h2 {
   margin-bottom: 8vw;
 }
 
-.rating img {
+.info .rating img {
   width: 20px;
   margin-bottom: 2vw;
 }
@@ -104,21 +104,21 @@ span {
 }
 
 .colour-circle1 {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   background-color: #3caccb;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .colour-circle2 {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   background-color: #ffc83d;
   border-radius: 50%;
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .price h2 {
@@ -200,4 +200,53 @@ span {
 
 .productTitle {
   font-weight: 300;
+}
+
+/* reviews */
+
+.rev-row {
+  display: flex;
+  align-content: space-around;
+}
+
+.rev-container {
+  box-shadow: var(--shadow);
+  margin-right: 0.75vw;
+  margin-left: 0.75vw;
+  width: 28vw;
+  height: 26.131vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.rev-content {
+  margin: 10%;
+}
+
+.rev-content .rating img {
+  width: 20px;
+  margin-bottom: 1vw;
+}
+
+.profilepic {
+  width: 100px;
+  height: 100px;
+}
+
+.rev-name {
+  font-weight: 800;
+  font-size: var(--normal-text);
+}
+
+.rev-text {
+  width: 100%;
+}
+
+.rev-bar {
+  width: 100%;
+  height: 16vw;
+  background-color: #3caccb;
+  position: relative;
+  top: -160px;
+  z-index: -2;
 }
