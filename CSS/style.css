@@ -10,13 +10,13 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-top: 2.656vw;
 }
 #navItems {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -378,6 +378,8 @@ input {
   font-size: 1.25vw;
 }
 
+/* DROPDOWN */
+
 .dropdown {
   background-color: #95bcd8;
   display: block;
@@ -401,11 +403,52 @@ li > h4 {
 
 #dropDowngrid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-top: 2.656vw;
 }
 
 #dropDowngrid > ul > li {
   display: flex;
   flex-direction: column;
+}
+
+#ddCategories > ul {
+  list-style: none;
+  padding-left: 0;
+  grid-column-start: 3;
+  margin-right: 6vw;
+  color: white;
+}
+
+#ddCategories > ul > li {
+  padding-bottom: 1vw;
+}
+
+.ddShop {
+  display: none;
+}
+
+.ddAbout {
+  justify-self: end;
+  margin-right: 0;
+}
+
+.dropdShop {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  display: flex;
+  visibility: hidden;
+}
+
+.dropdAbout {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdAbout > .ddAbout {
+  margin-right: 0vw;
 }
