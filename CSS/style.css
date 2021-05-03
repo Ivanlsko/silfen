@@ -7,7 +7,13 @@ header {
   background-size: cover;
   height: 60vw;
 }
+.black {
+  color: black !important;
+}
 
+.white {
+  color: white !important;
+}
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -430,7 +436,8 @@ li > h4 {
 
 .ddAbout {
   justify-self: end;
-  margin-right: 0;
+  margin-right: -33px !important;
+  margin-left: 100px;
 }
 
 .dropdShop {
@@ -438,7 +445,6 @@ li > h4 {
   grid-column-end: 4;
 
   display: flex;
-  visibility: hidden;
 }
 
 .dropdAbout {
@@ -449,6 +455,6 @@ li > h4 {
   justify-content: flex-end;
 }
 
-.dropdAbout > .ddAbout {
-  margin-right: 0vw;
+.hidden {
+  display: none !important;
 }
