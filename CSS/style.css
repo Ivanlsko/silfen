@@ -389,6 +389,9 @@ input {
 .dropdown {
   background-color: #95bcd8;
   display: block;
+  position: absolute;
+  width: 100vw;
+  top: 0;
 }
 
 #navItems > li {
@@ -428,9 +431,6 @@ li > h4 {
 
 #ddCategories > ul > li {
   padding-bottom: 1vw;
-}
-
-.ddShop {
 }
 
 .ddAbout {
