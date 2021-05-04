@@ -123,7 +123,7 @@ button {
 }
 
 .moveRight {
-  animation: moveRight 3s ease-in-out forwards;
+  animation: moveRight 1s ease-in-out forwards;
 }
 
 @keyframes moveRight {
@@ -134,7 +134,7 @@ button {
 
 /*WORKS FINE */
 .moveLeft {
-  animation: moveLeft 3s ease-in-out forwards;
+  animation: moveLeft 1s ease-in-out forwards;
 }
 
 @keyframes moveLeft {
@@ -144,8 +144,7 @@ button {
 }
 
 .categoryBoxes > img {
-  width: 60%;
-  margin-top: -2vw;
+  width: 55%;
 }
 
 .categoryBoxes > h4 {
@@ -353,7 +352,7 @@ span {
 
 footer {
   width: 100vw;
-  height: 100vh;
+  height: 56.25vw;
   background-color: #95bcd8;
   color: white;
 }
@@ -377,7 +376,7 @@ footer > .mrgn > img {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #f3f3f3;
-  margin-top: 3vw;
+  margin-top: 5vw;
 }
 
 #bottom > ul {
@@ -532,4 +531,16 @@ li > h4 {
 
 #ddCategories > ul > li > h4 {
   font-weight: 600;
+}
+
+/* Underline */
+
+.underline {
+  height: 1vw;
+  background-color: #b1d9e9;
+  position: relative;
+  z-index: -1;
+  top: -1.2vw;
+  margin: 0vw -0.5vw;
+  border-radius: 50px;
 }
