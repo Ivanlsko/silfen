@@ -119,6 +119,7 @@ article.onSale::before {
   padding: 0.3em 1.7em;
   margin: 0.5em;
   border-radius: 3em;
+  transform: translate(-15px, 8px);
   z-index: 1;
 }
 
@@ -216,5 +217,9 @@ button.heart {
     width: 0.8rem;
     height: 0.8rem;
     margin: 0.3rem;
+  }
+
+  .categoryH {
+    font-size: 5vw;
   }
 }
