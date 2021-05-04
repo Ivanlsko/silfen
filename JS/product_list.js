@@ -3,13 +3,27 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const discount = urlParams.get("discount");
+const newArrivals = urlParams.get("new_arrivals");
+const topSellers = urlParams.get("top_sellers");
 
 let urlAll = "https://keafs-8b71.restdb.io/rest/silfen-products";
 let urlSale = `?q={"discount": {"$gt": 0}}`;
+let urlNew = `?q={"new_arrivals": true}`;
+let urlTop = `?q={"top_sellers": true}`;
 
 if (discount) {
   console.log("get products on sale");
   urlAll = urlAll + urlSale;
+}
+
+if (newArrivals) {
+  console.log("get new arrivals");
+  urlAll = urlAll + urlNew;
+}
+
+if (topSellers) {
+  console.log("get top sellers");
+  urlAll = urlAll + urlTop;
 }
 
 fetch(urlAll, {
@@ -20,19 +34,19 @@ fetch(urlAll, {
 })
   .then((res) => res.json())
   .then((response) => {
-    showAllProducts(response);
+    showProducts(response);
   })
   .catch((err) => {
     console.error(err);
   });
 
-function showAllProducts(products) {
+function showProducts(products) {
   //   console.log(products);
   //grab template
   const template = document.querySelector("#productTemplate").content;
   //clone
   products.forEach((product) => {
-    // console.log(product);
+    console.log(product);
     const copy = template.cloneNode(true);
     //adjust stuff
     copy.querySelector("#img_01").src = product.img_01;
