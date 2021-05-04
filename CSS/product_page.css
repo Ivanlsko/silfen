@@ -75,7 +75,7 @@ h1 {
   margin-bottom: 2vw;
 }
 
-h2 {
+.section_heading {
   letter-spacing: var(--spacing);
   font-size: var(--category-heading);
   font-weight: 500;
@@ -133,8 +133,6 @@ span {
   width: 16vw;
   font-size: var(--button-text);
   font-weight: 600;
-  position: relative;
-  top: -100px;
 }
 
 .product {
