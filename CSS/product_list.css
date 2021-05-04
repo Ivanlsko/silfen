@@ -71,6 +71,7 @@ button {
   margin-bottom: 5vw;
   text-align: center;
   margin-top: 5vw;
+  text-transform: uppercase;
 }
 
 .productList {

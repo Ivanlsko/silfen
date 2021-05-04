@@ -14,16 +14,19 @@ let urlTop = `?q={"top_sellers": true}`;
 if (discount) {
   console.log("get products on sale");
   urlAll = urlAll + urlSale;
+  document.querySelector(".categoryH").textContent = "sale";
 }
 
 if (newArrivals) {
   console.log("get new arrivals");
   urlAll = urlAll + urlNew;
+  document.querySelector(".categoryH").textContent = "new arrivals";
 }
 
 if (topSellers) {
   console.log("get top sellers");
   urlAll = urlAll + urlTop;
+  document.querySelector(".categoryH").textContent = "top-sellers";
 }
 
 fetch(urlAll, {
