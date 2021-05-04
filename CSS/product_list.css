@@ -130,7 +130,6 @@ article.onSale::before {
 article:hover a.productLink {
   display: block;
   background: var(--button-color);
-  color: white;
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -147,19 +146,14 @@ article:hover #img_01 {
 
 button.heart {
   position: absolute;
-  top: 1em;
+  top: 0.4em;
   right: 1em;
-  background: url(../Assets/heart_btn_b.svg) no-repeat;
-  width: 1.7rem;
-  height: 1.7rem;
+  background: url(../Assets/heart_btn_black_white-bg.svg) no-repeat;
+  width: 2.5rem;
+  height: 2.5rem;
   background-size: 100%;
   cursor: pointer;
   border: none;
-}
-
-article:hover button.heart {
-  background: url(../Assets/heart_btn_w.svg) no-repeat;
-  background-size: 100%;
 }
 
 .colorVariants {
