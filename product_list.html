@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/product_list.css" />
+    <title>Silfen studio - Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="mrgn">
+        <img src="Assets/SILFEN - LOGO (LILLE).jpg" alt="" id="logo" />
+        <ul id="navItems">
+          <a href=""><li>Shop</li></a>
+          <a href="product_list.html?new_arrivals=true"
+            ><li>New arrivals</li></a
+          >
+          <a href="product_list.html?discount=true"><li>Sale</li></a>
+          <a href=""><li>About us</li></a>
+        </ul>
+        <div id="cart_wishlist">
+          <a href=""><img src="assets/heart_btn_b.svg" alt="wishlist" /></a
+          ><a href=""><img src="assets/white_bag 1.svg" alt="bag" /></a>
+        </div>
+      </nav>
+    </header>
+    <section class="mrgn">
+      <h2 class="categoryH">ALL PRODUCTS</h2>
+      <div class="productList">
+        <template id="productTemplate">
+          <article class="product">
+            <a href="product_page.html?id=" class="">
+              <div class="imgWrapper">
+                <button class="heart"></button>
+                <img
+                  class="productImage"
+                  id="img_01"
+                  src="Assets/product-pic_01.jpg"
+                  alt="product"
+                />
+                <img
+                  class="productImage hidden"
+                  id="img_02"
+                  src="Assets/product-pic_02.jpg"
+                  alt="product"
+                />
+              </div>
+              <h3 class="productTitle">ULRIKKE RECYCLED</h3>
+              <h3 class="productPrice">DKK <span>499</span>,00</h3>
+              <h3 class="discountPrice hidden">DKK <span>299</span>,00</h3>
+              <div class="colorVariants">
+                <div class="variant"></div>
+                <div class="variant"></div>
+              </div>
+              <!-- <a href="product_page.html" class="productLink hidden"
+                >View product</a
+              > -->
+            </a>
+          </article>
+        </template>
+      </div>
+    </section>
+    <script src="JS/product_list.js"></script>
+  </body>
+</html>

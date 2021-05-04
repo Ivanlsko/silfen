@@ -10,6 +10,7 @@
   </head>
   <body>
     <header>
+      <img id="headerElem" src="Assets/elements_header.svg" alt="">
       <nav class="mrgn">
         <img src="Assets/SILFEN - LOGO (LILLE).jpg" alt="" id="logo" />
         <ul id="navItems">
@@ -24,34 +25,34 @@
         <div id="dropDowngrid"class="mrgn">
         <img src="Assets/SILFEN - LOGO -white.svg" alt="" id="logo" />
         <ul id="navItems">
-          <li>Shop</li>
-          <li>New arrivals</li>
-          <li>Sale</li>
-          <li>About us</li>
+          <li id="liShop">Shop</li>
+          <li id="liNA">New arrivals</li>
+          <li id="liSale">Sale</li>
+          <li id="liAboutus">About us</li>
         </ul>
         <div id="cart_wishlist"><a href=""><img src="assets/heart.svg" alt="wishlist"></a><a href=""><img src="assets/white_bag 1.svg" alt="bag"></a></div>
         <div id="ddCategories">
-          <ul class="ddShop">
+          <ul id="firstUl" class="ddShop hidden">
             <li><h4>Categories</h4></li>
             <li>All products</li>
             <li>Mini bags</li>
             <li>Shoulder bags</li>
             <li>Tote bags</li>
           </ul>
-          <ul class="ddShop">
-            <li> . </li>
+          <ul id="secondUl" class="ddShop hidden">
+            <li> ‎‎‎‏‏‎ ‎‏‏‎ ‎ </li>
             <li>Bumbags</li>
             <li>Crossbody bags</li>
             <li>Wallets</li>
             <li>Care</li>
           </ul>
-          <ul class="ddShop">
+          <ul  id="thirdUl" class="ddShop hidden">
             <li><h4>Collections</h4></li>
             <li>Snow Queen</li>
             <li>Recycle</li>
             <li>Classics</li>
           </ul>
-          <ul class="ddAbout">
+          <ul class="ddAbout hidden">
             <li>About SILFEN</li>
             <li>Sustainability</li>
             <li>Contact us</li>
@@ -65,32 +66,53 @@
         <a href="index.html"><button>Let's shop</button></a>
       </div>
     </header>
+
     <section class="mrgn" id="categories">
+      <div id="catWrapper" class="">
       <div id="catbox1" class="categoryBoxes">
-      <img src="Assets/bumbag.png" alt="bumbag-category">
-      </img><h4>BUMBAGS</h4>
+      <img src="Assets/mini_bag.png" alt="bumbag-category">
+      </img><h4>MINI BAGS</h4>
     </div>
+    
     <div id="catbox2" class="categoryBoxes">
-      <img src="Assets/bumbag.png" alt="bumbag-category">
-      </img><h4>BUMBAGS</h4>
-    </div><div id="catbox3" class="categoryBoxes">
-      <img src="Assets/bumbag.png" alt="bumbag-category">
-      </img><h4>BUMBAGS</h4>
-    </div><div id="catbox4" class="categoryBoxes">
+      <img src="Assets/shoulder_bag.png" alt="bumbag-category">
+      </img><h4>SHOULDER BAGS</h4>
+    </div>
+    <div id="catbox3" class="categoryBoxes">
+      <img src="Assets/tote_bag.png" alt="bumbag-category">
+      </img><h4>TOTE BAGS</h4>
+    </div>
+    
+    <div id="catbox4" class="categoryBoxes">
       <img src="Assets/bumbag.png" alt="bumbag-category">
     </img><h4>BUMBAGS</h4>
-    </div><div id="catbox5" class="categoryBoxes">
-      <img src="Assets/bumbag.png" alt="bumbag-category">
-      </img><h4>BUMBAGS</h4>
-    </div><div id="catbox6" class="categoryBoxes">
-      <img src="Assets/bumbag.png" alt="bumbag-category">
-      </img><h4>BUMBAGS</h4>
-    </div><div id="catbox7" class="categoryBoxes">
-      <img src="Assets/bumbag.png" alt="bumbag-category">
-      </img><h4>BUMBAGS</h4>
-    </div></section>
+    </div>
+    
+    <div id="catbox5" class="categoryBoxes">
+      <img src="Assets/crossbody_bag.png" alt="bumbag-category">
+      </img><h4>CROSSBODY BAGS</h4>
+    </div>
+    
+    <div id="catbox6" class="categoryBoxes">
+      <img src="Assets/wallet_.png" alt="bumbag-category">
+      </img><h4>WALLETS</h4>
+    </div>
+    
+    <div id="catbox7" class="categoryBoxes">
+      <img src="Assets/care.png" alt="bumbag-category">
+      </img><h4>CARE</h4>
+    </div>
+  
+  </div>
+  
+
+</section>
+<div id="switch">
+  <div id="switch1" class="switchCircle switchFill "></div>
+  <div id="switch2" class="switchCircle"></div>
+</div>
     <section class="mrgn newTop" id="newTop">
-      <h2 class="categoryH">NEW ARRIVALS</h2>
+      <h2 class="categoryH">NEW ARRIVALS<div class="underline"></div></h2>
       <div class="catRow">
       <div class="product">
         <img class="productImage" src="Assets/product-pic.jpg" alt="">
@@ -126,7 +148,7 @@
     </section>
 
     <section class="newTop" id="TOP-SELLERS">
-      <h2 class="categoryH">TOP-SELLERS</h2>
+      <h2 class="categoryH">TOP-SELLERS<div class="underline"></div></h2>
 <div class="catRow">
       <div class="product">
         <img class="productImage" src="Assets/product-pic.jpg" alt="">
@@ -162,6 +184,7 @@
     </section>
     <section id="sustainable"><h2 id="headingSus">WE ARE SUSTAINABLE</h2><button>Tell me more</button></section>
     <section id="instagram">
+      <img id="instagramElem"src="assets/elements_ig.svg" alt="">
       <h3>BE A PART OF OUR COMMUNITY<br>
       <span>@silfenstudio</span>
     </h3>
@@ -183,13 +206,13 @@
         <div id="shopFooter">
           <h4 class="footerH4">Shop</h4>
           <ul>
+            <li>Mini bags</li>
+            <li>Shoulder bags</li>
+            <li>Tote bags</li>
             <li>Bumbags</li>
-            <li>Bumbags</li>
-            <li>Bumbags</li>
-            <li>Bumbags</li>
-            <li>Bumbags</li>
-            <li>Bumbags</li>
-            <li>Bumbags</li>
+            <li>Crossbody bags</li>
+            <li>Wallets</li>
+            <li>Care</li>
           </ul>
         </div>
         <div id="quickLinks">
