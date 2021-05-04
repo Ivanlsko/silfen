@@ -392,6 +392,8 @@ input {
   position: absolute;
   width: 100vw;
   top: 0;
+  padding-top: 0;
+  padding-bottom: 2vw;
 }
 
 #navItems > li {
@@ -456,4 +458,8 @@ li > h4 {
 
 .hidden {
   display: none !important;
+}
+
+#ddCategories > ul > li > h4 {
+  font-weight: 600;
 }
