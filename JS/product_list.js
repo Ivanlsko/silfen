@@ -1,4 +1,18 @@
-fetch("https://keafs-8b71.restdb.io/rest/silfen-products", {
+//all products: https://keafs-8b71.restdb.io/rest/silfen-products
+//api-key: 602e39f15ad3610fb5bb62c6
+
+const urlParams = new URLSearchParams(window.location.search);
+const discount = urlParams.get("discount");
+
+let urlAll = "https://keafs-8b71.restdb.io/rest/silfen-products";
+let urlSale = `?q={"discount": {"$gt": 0}}`;
+
+if (discount) {
+  console.log("get products on sale");
+  urlAll = urlAll + urlSale;
+}
+
+fetch(urlAll, {
   method: "GET",
   headers: {
     "x-apikey": "602e39f15ad3610fb5bb62c6",
@@ -18,7 +32,7 @@ function showAllProducts(products) {
   const template = document.querySelector("#productTemplate").content;
   //clone
   products.forEach((product) => {
-    console.log(product);
+    // console.log(product);
     const copy = template.cloneNode(true);
     //adjust stuff
     copy.querySelector("#img_01").src = product.img_01;
