@@ -6,6 +6,8 @@ header {
   background-image: url(BG.jpg);
   background-size: cover;
   height: 60vw;
+  position: relative;
+  overflow: hidden;
 }
 .black {
   color: black !important;
@@ -45,6 +47,16 @@ a {
 #cart_wishlist > a > img {
   margin-left: 2vw;
 }
+
+/* Header section */
+
+#headerElem {
+  position: absolute;
+  max-width: 120%;
+  left: -10vw;
+  top: 12vw;
+  z-index: 0;
+}
 .mrgn {
   margin-left: var(--margin);
   margin-right: var(--margin);
@@ -72,6 +84,10 @@ button {
   font-weight: 600;
 }
 
+#heading {
+  position: relative;
+  z-index: 1;
+}
 /* CATEGORIES */
 
 #categories {
@@ -237,11 +253,19 @@ button {
 
 /* INSTAGRAM */
 
+#instagramElem {
+  position: absolute;
+  max-width: 120%;
+  z-index: 1;
+}
+
 #instagram {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10vw;
+  position: relative;
+  overflow: hidden;
 }
 
 #instagram > h3 {
@@ -249,6 +273,8 @@ button {
   letter-spacing: var(--spacing);
   font-weight: 400;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 span {
