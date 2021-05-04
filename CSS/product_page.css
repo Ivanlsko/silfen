@@ -57,11 +57,18 @@ a {
 .imgbox3 {
   width: 80px;
   height: 80px;
-  margin-bottom: 30px;
 }
 
-.images img {
+.imgbox_container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.imgbox1,
+.imgbox2,
+.imgbox3 img {
   max-width: 100%;
+  overflow: hidden;
 }
 
 .product-image img {
