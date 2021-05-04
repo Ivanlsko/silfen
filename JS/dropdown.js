@@ -1,8 +1,6 @@
 const dropdown = document.querySelector(".dropdown");
-let dropdownDown = false;
 const dropdownCont = document.querySelector("#ddCategories");
 const ddAbout = document.querySelector(".ddAbout");
-var ddShop = document.getElementsByClassName("ddShop");
 
 document
   .querySelector("#navShop")
