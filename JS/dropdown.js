@@ -131,3 +131,21 @@ function dropdownLeave() {
   console.log("I am connected");
   dropdown.classList.add("hidden");
 }
+
+// Carousel //
+
+document.querySelector("#switch1").addEventListener("click", () => {
+  console.log("do I really work");
+  document.querySelector("#catWrapper").classList.remove("moveLeft");
+  document.querySelector("#catWrapper").classList.add("moveRight");
+  document.querySelector("#switch2").classList.remove("switchFill");
+  document.querySelector("#switch1").classList.add("switchFill");
+});
+
+document.querySelector("#switch2").addEventListener("click", () => {
+  console.log("do I really work");
+  document.querySelector("#catWrapper").classList.remove("moveRight");
+  document.querySelector("#catWrapper").classList.add("moveLeft");
+  document.querySelector("#switch1").classList.remove("switchFill");
+  document.querySelector("#switch2").classList.add("switchFill");
+});

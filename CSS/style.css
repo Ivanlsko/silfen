@@ -90,13 +90,57 @@ button {
 }
 /* CATEGORIES */
 
-#categories {
+#catWrapper {
   display: flex;
   position: relative;
-  width: calc(100vw - var(--margin));
   height: 20vw;
   margin-top: 10vw;
+}
+#switch {
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#switch :not(:last-child) {
+  margin-right: 0.5vw;
+}
+
+.switchCircle {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50px;
+  border: 1px solid #3caccb;
+}
+
+.switchFill {
+  background-color: #3caccb;
+}
+#categories {
+  width: calc(100vw - var(--margin));
   overflow: hidden;
+}
+
+.moveRight {
+  animation: moveRight 3s ease-in-out forwards;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-67vw);
+  }
+}
+
+/*WORKS FINE */
+.moveLeft {
+  animation: moveLeft 3s ease-in-out forwards;
+}
+
+@keyframes moveLeft {
+  to {
+    transform: translateX(-67vw);
+  }
 }
 
 .categoryBoxes > img {
