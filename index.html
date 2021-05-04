@@ -13,13 +13,52 @@
       <nav class="mrgn">
         <img src="Assets/SILFEN - LOGO (LILLE).jpg" alt="" id="logo" />
         <ul id="navItems">
-          <a href="product_list.html"><li>Shop</li></a>
-          <a href="product_list.html"><li>New arrivals</li></a>
-          <a href="product_list.html"><li>Sale</li></a>
-          <a href="about.html"><li>About us</li></a>
+          <li id="navShop" class="black">Shop</li>
+          <a href="product_list.html"><li class="black">New arrivals</li></a>
+          <a href="product_list.html"><li class="white">Sale</li></a>
+          <li id="navAboutus" class="white">About us</li>
         </ul>
         <div id="cart_wishlist"><a href=""><img src="assets/heart.svg" alt="wishlist"></a><a href=""><img src="assets/white_bag 1.svg" alt="bag"></a></div>
       </nav>
+      <nav class=" hidden dropdown">
+        <div id="dropDowngrid"class="mrgn">
+        <img src="Assets/SILFEN - LOGO -white.svg" alt="" id="logo" />
+        <ul id="navItems">
+          <li>Shop</li>
+          <li>New arrivals</li>
+          <li>Sale</li>
+          <li>About us</li>
+        </ul>
+        <div id="cart_wishlist"><a href=""><img src="assets/heart.svg" alt="wishlist"></a><a href=""><img src="assets/white_bag 1.svg" alt="bag"></a></div>
+        <div id="ddCategories">
+          <ul class="ddShop">
+            <li><h4>Categories</h4></li>
+            <li>All products</li>
+            <li>Mini bags</li>
+            <li>Shoulder bags</li>
+            <li>Tote bags</li>
+          </ul>
+          <ul class="ddShop">
+            <li> . </li>
+            <li>Bumbags</li>
+            <li>Crossbody bags</li>
+            <li>Wallets</li>
+            <li>Care</li>
+          </ul>
+          <ul class="ddShop">
+            <li><h4>Collections</h4></li>
+            <li>Snow Queen</li>
+            <li>Recycle</li>
+            <li>Classics</li>
+          </ul>
+          <ul class="ddAbout">
+            <li>About SILFEN</li>
+            <li>Sustainability</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+      </div>
+   </nav>
       <div class="mrgn"id="heading">
         <h1>WE MAKE <br>SUSTAINABLE BAGS</h1>
         <p>Additional description with least importance Additional description with least importance Additional description with l</p>
@@ -123,17 +162,18 @@
     </section>
     <section id="sustainable"><h2 id="headingSus">WE ARE SUSTAINABLE</h2><button>Tell me more</button></section>
     <section id="instagram">
-      <h3>Be a part of our community
-      @silfenstudio
+      <h3>BE A PART OF OUR COMMUNITY<br>
+      <span>@silfenstudio</span>
     </h3>
-    <div>
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </div></section>
+    <div id="igbg"><div id="carousel">
+      <img src="Assets/Screenshot 2021-04-21 at 19.44 1.jpg" alt="ig-post">
+      <img src="Assets/Screenshot 2021-04-21 at 19.52 1.jpg" alt="ig-post">
+      <img src="Assets/Screenshot 2021-04-21 at 19.44 1.jpg" alt="ig-post">
+      <img src="Assets/Screenshot 2021-04-21 at 19.52 1.jpg" alt="ig-post">
+    </div></div></section>
     <footer>
-      <img src="" alt="" id="logoW">
+      <div class="mrgn">
+      <img src="Assets/SILFEN - LOGO -white.svg" alt="" id="logoW">
       <div id="footerGrid">
         <div id="newsletter">
           <h3>Subscribe to our newsletter</h3>
@@ -141,7 +181,7 @@
           <input type="email" name="email" placeholder="your@emal.com">
         </div>
         <div id="shopFooter">
-          <h4>Shop</h4>
+          <h4 class="footerH4">Shop</h4>
           <ul>
             <li>Bumbags</li>
             <li>Bumbags</li>
@@ -153,7 +193,7 @@
           </ul>
         </div>
         <div id="quickLinks">
-          <h4>Shop</h4>
+          <h4 class="footerH4">Shop</h4>
           <ul>
             <li>Sale</li>
             <li>Top-selling</li>
@@ -162,18 +202,18 @@
           </ul>
         </div>
         <div id="socialFooter">
-          <h4>Get in touch</h4>
+          <h4 class="footerH4">Get in touch</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum proin proin eu id.</p>
           <div id="someIcons">
-            <img src="" alt="IG">
-            <img src="" alt="FB">
-            <img src="" alt="IG">
-            <img src="" alt="FB"></div>
+            <img src="Assets/facebook.svg" alt="Facebook-icon">
+            <img src="Assets/instagram.svg" alt="Instagram-icon">
+            <img src="Assets/linkedin.svg" alt="Linkedin-icon">
         </div>
-      </div>
+      </div></div>
       <div id="bottom">
         <p>© 2021, Silfen, All rights reserved.</p>
-        <ul><li>Terms and conditions</li> | <li>Privacy policy</li>| <li>Shipping</li></ul>
+        <ul><li>Terms and conditions </li> | <li>Privacy policy</li>| <li>Shipping</li></ul>
       </div></footer>
+    <script src="JS/dropdown.js"></script>
   </body>
 </html>
