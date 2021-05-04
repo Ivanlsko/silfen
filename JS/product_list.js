@@ -5,11 +5,18 @@ const urlParams = new URLSearchParams(window.location.search);
 const discount = urlParams.get("discount");
 const newArrivals = urlParams.get("new_arrivals");
 const topSellers = urlParams.get("top_sellers");
+const miniBags = urlParams.get("mini_bags");
 
+//All products
 let urlAll = "https://keafs-8b71.restdb.io/rest/silfen-products";
+//Sale items
 let urlSale = `?q={"discount": {"$gt": 0}}`;
+//New arrivals
 let urlNew = `?q={"new_arrivals": true}`;
+//Top sellers
 let urlTop = `?q={"top_sellers": true}`;
+//Mini bags
+let urlMini = `?q={"category":"Mini bags"}`;
 
 if (discount) {
   console.log("get products on sale");
@@ -27,6 +34,12 @@ if (topSellers) {
   console.log("get top sellers");
   urlAll = urlAll + urlTop;
   document.querySelector(".categoryH").textContent = "top-sellers";
+}
+
+if (miniBags) {
+  console.log("get mini bags");
+  urlAll = urlAll + urlMini;
+  document.querySelector(".categoryH").textContent = "Mini bags";
 }
 
 fetch(urlAll, {
