@@ -52,6 +52,9 @@ function showProducts(products) {
     console.log(product);
     const copy = template.cloneNode(true);
     //adjust stuff
+    copy.querySelector(
+      ".product a"
+    ).href = `product_page.html?id=${product._id}`;
     copy.querySelector("#img_01").src = product.img_01;
     copy.querySelector("#img_02").src = product.img_02;
     copy.querySelector(".productTitle").textContent = product.title;
