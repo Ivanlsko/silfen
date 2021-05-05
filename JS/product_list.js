@@ -24,31 +24,31 @@ let urlShoulder = `?q={"category":"Shoulder bags"}`;
 if (discount) {
   console.log("get products on sale");
   urlAll = urlAll + urlSale;
-  document.querySelector(".categoryH").textContent = "sale";
+  document.querySelector(".categoryH span").textContent = "sale";
 }
 
 if (newArrivals) {
   console.log("get new arrivals");
   urlAll = urlAll + urlNew;
-  document.querySelector(".categoryH").textContent = "new arrivals";
+  document.querySelector(".categoryH span").textContent = "new arrivals";
 }
 
 if (topSellers) {
   console.log("get top sellers");
   urlAll = urlAll + urlTop;
-  document.querySelector(".categoryH").textContent = "top-sellers";
+  document.querySelector(".categoryH span").textContent = "top-sellers";
 }
 
 if (miniBags) {
   console.log("get mini bags");
   urlAll = urlAll + urlMini;
-  document.querySelector(".categoryH").textContent = "mini bags";
+  document.querySelector(".categoryH span").textContent = "mini bags";
 }
 
 if (shoulderBags) {
   console.log("get shoulder bags");
   urlAll = urlAll + urlShoulder;
-  document.querySelector(".categoryH").textContent = "shoulder bags";
+  document.querySelector(".categoryH span").textContent = "shoulder bags";
 }
 
 fetch(urlAll, {
