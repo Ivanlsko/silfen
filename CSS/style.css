@@ -49,6 +49,7 @@ a {
 }
 #cart_wishlist > a > img {
   margin-left: 2vw;
+  height: 3vw;
 }
 
 /* Header section */
