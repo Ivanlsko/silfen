@@ -132,4 +132,12 @@ function showProduct(product) {
   //populate
   document.querySelector(".productTitle").textContent = product.title;
   document.querySelector(".description p").textContent = product.description;
+  document.querySelector(".dimensions p span:last-of-type").textContent =
+    product.dimensions;
+  document.querySelector(".material p span:last-of-type").textContent =
+    product.material;
+  document.querySelector(".price h2 span").textContent = product.price;
+  document.querySelector(".product-image img").src = product.img_01;
+  document.querySelector(".imgbox1 img").src = product.img_01;
+  document.querySelector(".imgbox2 img").src = product.img_02;
 }

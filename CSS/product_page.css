@@ -62,6 +62,7 @@ a {
 .imgbox_container {
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 2vw;
 }
 
 .imgbox1,
@@ -69,6 +70,10 @@ a {
 .imgbox3 img {
   max-width: 100%;
   overflow: hidden;
+}
+
+.dimmed {
+  opacity: 40%;
 }
 
 .product-image img {
@@ -100,7 +105,7 @@ h1 {
   max-width: 800px;
 }
 
-span {
+p span:first-of-type {
   font-weight: 800;
   font-size: var(--normal-text);
 }
@@ -144,6 +149,10 @@ span {
 
 .product {
   display: flex;
+}
+
+.info {
+  margin-left: 3vw;
 }
 
 #info-panel {
