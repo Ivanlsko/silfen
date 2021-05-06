@@ -1,4 +1,4 @@
-//all products: https://keafs-8b71.restdb.io/rest/silfen-products
+/* /all products: https://keafs-8b71.restdb.io/rest/silfen-products
 //api-key: 602e39f15ad3610fb5bb62c6
 
 //New arrivals
@@ -18,4 +18,4 @@ fetch(urlNew, {
   })
   .catch((err) => {
     console.error(err);
-  });
+  }); */
