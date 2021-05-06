@@ -111,17 +111,25 @@ function handleSubmit(e) {
 
 const urlParams = new URLSearchParams(window.location.search);
 
-const productId = searchParams.get("product");
+const productId = urlParams.get("id");
 
-fetch("https://keafs-8b71.restdb.io/rest/silfen-products" + productId, {
+fetch("https://keafs-8b71.restdb.io/rest/silfen-products/" + productId, {
   method: "GET",
   headers: {
     "x-apikey": "602e39f15ad3610fb5bb62c6",
   },
 })
-
-.then((res) => res.json())
-.then ((response) => {
+  .then((res) => res.json())
+  .then((response) => {
     showProduct(response);
-})
-.catch((err) =>)
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+function showProduct(product) {
+  console.log(product);
+  //populate
+  document.querySelector(".productTitle").textContent = product.title;
+  document.querySelector(".description p").textContent = product.description;
+}
